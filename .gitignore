@@ -1,0 +1,6 @@
+__MACOSX/
+Data/
+*.a00
+*.gz
+*.tar
+*.zip
