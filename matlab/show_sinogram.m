@@ -9,8 +9,8 @@ w = 128;
 h = 48;
 p = 120;
 idx = 24;
-Y = read_sinogram_norm_raw(filename, 'float', w, h, p);
+Y = read_tensor3d_norm_raw(filename, 'float', w, h, p);
 img = Y(:, idx, :);
 img = reshape(img, [w, p]);
 img = normalize_max(img);
-imshow(img)
+imshow(img);
